@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16.0sp"
+            android:textColor="@color/blue"
+            android:text="文本内容" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2.0dip"
+            android:background="@color/default_line_indicator_unselected_color" />
+
+        <EditText
+            android:id="@+id/write_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lines="3"
+            android:inputType="text"
+            android:hint="write something..." />
+    </LinearLayout>
+
+   
+    <LinearLayout
+        android:id="@+id/text_write_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/write_tag_button_bg"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:minHeight="48dip"
+        android:padding="12.0dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="写入标签"
+            android:textColor="#ff666666"
+            android:textSize="@dimen/default_title_indicator_text_size" />
+    </LinearLayout>
+</LinearLayout>

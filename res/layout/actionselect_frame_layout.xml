@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/select_top_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@android:style/TextAppearance.Large"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@color/default_line_indicator_selected_color"
+            android:text="选择事件"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2.0dip"
+            android:background="@color/default_line_indicator_selected_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cancel_tag_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/action_cancel_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/nor_button_bg"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#ff666666"
+            android:textSize="@dimen/default_title_indicator_text_size" />
+
+        <Button
+            android:id="@+id/action_next_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/nor_button_bg"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="#ff666666"
+            android:textSize="@dimen/default_title_indicator_text_size" />
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/action_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cancel_tag_lay"
+        android:layout_below="@id/select_top_lay"
+        android:cacheColorHint="@color/transparent" />
+
+</RelativeLayout>

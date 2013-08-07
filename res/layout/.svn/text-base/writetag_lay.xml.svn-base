@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="300.0dip"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@android:style/TextAppearance.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/bg"
+        android:text="选择写入类型" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:background="@color/default_line_indicator_selected_color" />
+
+    <LinearLayout
+        android:id="@+id/write_website_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nor_button_bg"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="12.0dip" >
+
+        <ImageView
+            android:layout_width="32.0dip"
+            android:layout_height="32.0dip"
+            android:layout_margin="5.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_home_url" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="4.0dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="网址"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:singleLine="true"
+                android:text="写入一个打开网址的TAG"
+                android:textColor="#ff666666"
+                android:textSize="@dimen/default_title_indicator_text_size" />
+        </LinearLayout>
+
+     
+    </LinearLayout>
+<LinearLayout
+        android:id="@+id/write_contact_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nor_button_bg"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="12.0dip" >
+
+        <ImageView
+            android:layout_width="32.0dip"
+            android:layout_height="32.0dip"
+            android:layout_margin="5.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_home_vcard" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="4.0dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="联系人"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:singleLine="true"
+                android:text="写入联系人资料"
+                android:textColor="#ff666666"
+                android:textSize="@dimen/default_title_indicator_text_size" />
+        </LinearLayout>
+
+     
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/write_dialnumber_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nor_button_bg"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="12.0dip" >
+
+        <ImageView
+            android:layout_width="32.0dip"
+            android:layout_height="32.0dip"
+            android:layout_margin="5.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_home_phone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="4.0dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="电话号码"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:singleLine="true"
+                android:text="写入一个电话号码"
+                android:textColor="#ff666666"
+                android:textSize="@dimen/default_title_indicator_text_size" />
+        </LinearLayout>
+
+     
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/write_text_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nor_button_bg"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="12.0dip" >
+
+        <ImageView
+            android:layout_width="32.0dip"
+            android:layout_height="32.0dip"
+            android:layout_margin="5.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_home_text" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="4.0dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="文本信息"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:singleLine="true"
+                android:text="写入简单文本信息"
+                android:textColor="#ff666666"
+                android:textSize="@dimen/default_title_indicator_text_size" />
+        </LinearLayout>
+
+     
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/write_email_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nor_button_bg"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="12.0dip" >
+
+        <ImageView
+            android:layout_width="32.0dip"
+            android:layout_height="32.0dip"
+            android:layout_margin="5.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_home_email" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="4.0dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="邮件信息"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:singleLine="true"
+                android:text="写入邮件信息"
+                android:textColor="#ff666666"
+                android:textSize="@dimen/default_title_indicator_text_size" />
+        </LinearLayout>
+
+     
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:background="@color/default_line_indicator_unselected_color" />
+
+    <LinearLayout
+        android:id="@+id/cancel_write_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nor_button_bg"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:minHeight="48dip"
+        android:padding="12.0dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="取消"
+            android:textColor="#ff666666"
+            android:textSize="@dimen/default_title_indicator_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

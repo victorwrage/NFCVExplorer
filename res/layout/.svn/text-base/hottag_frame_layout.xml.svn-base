@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@android:style/TextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:text="使用场景" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:background="@drawable/nor_button_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/hot_home_lay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/nor_button_bg"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:padding="12.0dip" >
+
+                        <ImageView
+                            android:id="@android:id/icon"
+                            android:layout_width="32.0dip"
+                            android:layout_height="32.0dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5.0dip"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_tag_home" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="4.0dip" >
+
+                            <TextView
+                                android:id="@android:id/text1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="家里"
+                                android:textSize="16.0sp" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="marquee"
+                                android:focusable="true"
+                                android:text="开启WIFI,手机铃声自动"
+                                android:textColor="#ff666666"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/hot_car_lay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/nor_button_bg"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:padding="12.0dip" >
+
+                        <ImageView
+                            android:id="@android:id/icon"
+                            android:layout_width="32.0dip"
+                            android:layout_height="32.0dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5.0dip"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_tag_car" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="4.0dip" >
+
+                            <TextView
+                                android:id="@android:id/text1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="汽车"
+                                android:textSize="16.0sp" />
+
+                            <TextView
+                                android:id="@android:id/text2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="marquee"
+                                android:text="打开地图,关闭WIFI,手机铃声最大"
+                                android:textColor="#ff666666"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/hot_office_lay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/nor_button_bg"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:padding="12.0dip" >
+
+                        <ImageView
+                            android:id="@android:id/icon"
+                            android:layout_width="32.0dip"
+                            android:layout_height="32.0dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5.0dip"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_tag_office" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="4.0dip" >
+
+                            <TextView
+                                android:id="@android:id/text1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="办公室"
+                                android:textSize="16.0sp" />
+
+                            <TextView
+                                android:id="@android:id/text2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="marquee"
+                                android:text="开启WIFI,手机静音"
+                                android:textColor="#ff666666"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/hot_bed_lay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/nor_button_bg"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:padding="12.0dip" >
+
+                        <ImageView
+                            android:id="@android:id/icon"
+                            android:layout_width="32.0dip"
+                            android:layout_height="32.0dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5.0dip"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_tag_bedside" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="4.0dip" >
+
+                            <TextView
+                                android:id="@android:id/text1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="卧室"
+                                android:textSize="16.0sp" />
+
+                            <TextView
+                                android:id="@android:id/text2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="marquee"
+                                android:text="关闭WIFI，手机静音"
+                                android:textColor="#ff666666"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            
+
+            <TextView
+                style="@android:style/TextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:text="快捷功能" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/hot_light_lay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/nor_button_bg"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:padding="12.0dip" >
+
+                        <ImageView
+                            android:id="@android:id/icon"
+                            android:layout_width="42.0dip"
+                            android:layout_height="42.0dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5.0dip"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_category_apps" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="4.0dip" >
+
+                            <TextView
+                                android:id="@android:id/text1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="应用"
+                                android:textSize="16.0sp" />
+
+                            <TextView
+                                android:id="@android:id/text2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="marquee"
+                                android:focusable="true"
+                                android:text="打开应用程序"
+                                android:textColor="#ff666666"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/hot_wifi_lay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/nor_button_bg"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:padding="12.0dip" >
+
+                        <ImageView
+                            android:id="@android:id/icon"
+                            android:layout_width="42.0dip"
+                            android:layout_height="42.0dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5.0dip"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_category_phone" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="4.0dip" >
+
+                            <TextView
+                                android:id="@android:id/text1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="电话"
+                                android:textSize="16.0sp" />
+
+                            <TextView
+                                android:id="@android:id/text2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="marquee"
+                                android:text="拨打电话"
+                                android:textColor="#ff666666"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            
+
+            <TextView
+                style="@android:style/TextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:text="快速开关" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/hot_switch_light_lay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/nor_button_bg"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:padding="12.0dip" >
+
+                        <ImageView
+                            android:id="@android:id/icon"
+                            android:layout_width="42.0dip"
+                            android:layout_height="42.0dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5.0dip"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_category_sound" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="4.0dip" >
+
+                            <TextView
+                                android:id="@android:id/text1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="声音"
+                                android:textSize="16.0sp" />
+
+                            <TextView
+                                android:id="@android:id/text2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="marquee"
+                                android:focusable="true"
+                                android:text="调整铃声模式为静音或普通"
+                                android:textColor="#ff666666"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/hot_switch_wifi_lay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/nor_button_bg"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:padding="12.0dip" >
+
+                        <ImageView
+                            android:id="@android:id/icon"
+                            android:layout_width="32.0dip"
+                            android:layout_height="32.0dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5.0dip"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_tag_wifi" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="4.0dip" >
+
+                            <TextView
+                                android:id="@android:id/text1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="WIFI"
+                                android:textSize="16.0sp" />
+
+                            <TextView
+                                android:id="@android:id/text2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="marquee"
+                                android:text="连接/关闭WIFI"
+                                android:textColor="#ff666666"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+         
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

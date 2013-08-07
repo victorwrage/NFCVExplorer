@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SoftScreenshotsGaller">
+        <attr name="android:galleryItemBackground" />
+    </declare-styleable>
+    <!-- Used in widget press action preference -->
+    <string-array name="network_switch">
+        <item>启用</item>
+        <item>禁用</item>
+    </string-array>
+    <string-array name="screen_switch">
+        <item>锁定</item>
+        <item>解锁</item>
+    </string-array>
+    <string-array name="ring_type">
+        <item>静音模式</item>
+        <item>震动模式</item>
+        <item>普通模式</item>
+    </string-array>
+    
+    <string-array name="write_phone_type">
+        <item>电话</item>
+        <item>短信</item>
+    </string-array>
+
+</resources>

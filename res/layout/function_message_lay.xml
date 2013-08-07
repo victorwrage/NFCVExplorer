@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/function_message_tv"
+        style="@android:style/TextAppearance.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/bg"
+        android:text="WIFI 开启/关闭"
+        android:textColor="@color/default_line_indicator_selected_color" />
+
+    <View
+        android:layout_width="100dip"
+        android:layout_height="2.0dip"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:background="@color/default_line_indicator_selected_color" />
+
+    <EditText 
+        android:id="@+id/function_message_dial"
+        android:layout_width="fill_parent"
+        android:singleLine="true"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:layout_height="wrap_content"/>
+    <EditText 
+        android:id="@+id/function_message_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:lines="3"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:background="@color/default_line_indicator_unselected_color" />
+
+</LinearLayout>

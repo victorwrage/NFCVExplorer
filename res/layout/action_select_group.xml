@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/nor_button_bg"
+    android:minHeight="60dip" >
+
+    <TextView
+        android:id="@+id/group_title"
+        style="@android:style/TextAppearance.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dip"
+        android:text="无线和网络" />
+
+    <ImageView
+        android:id="@+id/group_iv"
+        android:layout_width="43dip"
+        android:layout_height="43dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_tag_wifi" />
+
+</RelativeLayout>

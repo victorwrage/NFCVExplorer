@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NFCVExplorer</string>
+    <string name="action_settings">设置</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="msg_exit">再按一次，退出程序!</string>
+    <string name="preference_clean_title">清除缓存</string>
+    <string name="preference_clean_msg">清除所有TAG及事件记录</string>
+
+</resources>

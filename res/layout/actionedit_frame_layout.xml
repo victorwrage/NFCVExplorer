@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:isScrollContainer="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/edit_top_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@android:style/TextAppearance.Large"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@color/default_line_indicator_selected_color"
+            android:gravity="center"
+            android:text="编辑事件" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2.0dip"
+            android:background="@color/default_line_indicator_selected_color" />
+
+        <ProgressBar
+            android:id="@+id/edit_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/progress_round" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/edit_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_top_lay" >
+
+        <LinearLayout
+            android:id="@+id/edit_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/cancel_tag_lay"
+        style="@android:attr/buttonBarStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_scroll"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/edit_cancel_btn"
+            style="@android:attr/buttonBarButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/nor_button_bg"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#ff666666"
+            android:textSize="@dimen/default_title_indicator_text_size" />
+
+        <Button
+            android:id="@+id/edit_true_btn"
+            style="@android:attr/buttonBarButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/nor_button_bg"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#ff666666"
+            android:textSize="@dimen/default_title_indicator_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>
