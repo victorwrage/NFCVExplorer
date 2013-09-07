@@ -11,7 +11,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import com.yachi.nfcvexplorer.NFCApplication;
-import com.yachi.nfcvexplorer.nfc.M1Card;
+import com.yachi.nfcvexplorer.mifare.M1Card;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -371,7 +371,7 @@ public class NFCUtils {
 	}
 
 	/**
-	 * 检测网络是否可用
+	 * 提示
 	 * 
 	 * @param context
 	 * @return

@@ -8,7 +8,7 @@
         android:id="@+id/child_lay"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
-        android:background="@drawable/nor_button_bg" >
+        android:background="@drawable/list_button_bg_drawable" >
 
         <TextView
             android:id="@+id/child_title"

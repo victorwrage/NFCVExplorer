@@ -28,14 +28,14 @@ svn:special svn:externals svn:needs-lock
 
 my_admin.xml
 file
+2873
 
 
-
-
-2013-08-07T06:11:43.905000Z
-28995bc0ddbf7e04ea9b8900c8f0c330
-2013-07-22T08:55:43.734375Z
-2499
+delete
+2013-08-09T06:09:15.870000Z
+aa33f5b538d12f34a5da3f6f30d44066
+2013-08-09T09:25:07.812500Z
+2873
 longge
 
 
@@ -58,7 +58,7 @@ longge
 
 
 
-536
+538
 
 nfc_filter.xml
 file

@@ -4,16 +4,18 @@ import java.util.ArrayList;
 
 import com.actionbarsherlock.view.ActionMode;
 import com.actionbarsherlock.view.MenuItem;
+import com.umeng.update.UmengUpdateAgent;
+//import com.umeng.update.UmengUpdateAgent;
 import com.yachi.nfcvexplorer.gui.BaseActivity;
-import com.yachi.nfcvexplorer.gui.FrameDialogAddTag;
-import com.yachi.nfcvexplorer.gui.FrameDialogAddTag.IAddTagListtener;
-import com.yachi.nfcvexplorer.gui.FrameDialogWriteTag;
 
 import com.yachi.nfcvexplorer.bean.ActionItem;
-import com.yachi.nfcvexplorer.control.ACTION_TYPE;
-import com.yachi.nfcvexplorer.gui.FrameMain;
-import com.yachi.nfcvexplorer.gui.frame.FrameHistory;
-import com.yachi.nfcvexplorer.gui.frame.FrameHistory.IManageTagListtener;
+import com.yachi.nfcvexplorer.control.ENUM_ACTION_TYPE;
+import com.yachi.nfcvexplorer.gui.framgment.DialogFragmentAddTag;
+import com.yachi.nfcvexplorer.gui.framgment.DialogFragmentWriteTag;
+import com.yachi.nfcvexplorer.gui.framgment.FramgmentMain;
+import com.yachi.nfcvexplorer.gui.framgment.FramgmentHistory;
+import com.yachi.nfcvexplorer.gui.framgment.DialogFragmentAddTag.IAddTagListtener;
+import com.yachi.nfcvexplorer.gui.framgment.FramgmentHistory.IManageTagListtener;
 import com.yachi.nfcvexplorer.utils.Constants;
 import com.yachi.nfcvexplorer.utils.LogUtil;
 import com.actionbarsherlock.view.Menu;
@@ -21,24 +23,34 @@ import com.actionbarsherlock.view.Menu;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 
+/**
+ * @firm 长沙江泓信息技术有限公司
+ * 
+ * @author xiaoyl
+ * @date 2013-07-08
+ * 
+ * @file 主页、启动界面
+ * 
+ */
 public class MainActivity extends BaseActivity implements IManageTagListtener,IAddTagListtener {
 	private static final String PAGE_1 = "page_1";
 	/** 主界面的Fragment */
-	private FrameMain fragment1;
+	private FramgmentMain fragment1;
 	private FragmentTransaction ft;
 	private ActionMode amode;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		UmengUpdateAgent.update(MainActivity.this);
 		setContentView(R.layout.activity_fore_lay);
 		ft = getSupportFragmentManager().beginTransaction();
 		if (savedInstanceState == null) {
-			fragment1 = new FrameMain();
+			fragment1 = new FramgmentMain();
 			ft.add(R.id.fragment_container, fragment1, PAGE_1);
 			ft.commit();
 		} else {
-			fragment1 = (FrameMain) getSupportFragmentManager()
+			fragment1 = (FramgmentMain) getSupportFragmentManager()
 					.findFragmentByTag(PAGE_1);
 		}
 	}
@@ -49,9 +61,9 @@ public class MainActivity extends BaseActivity implements IManageTagListtener,IA
 		super.onResume();
 		initTags();
 		Constants.tag_name = null;
-		Constants.actionList = new ArrayList<ACTION_TYPE>();
+		Constants.actionList = new ArrayList<ENUM_ACTION_TYPE>();
 		Constants.actions_in_list = new ArrayList<ActionItem>();
-		FrameHistory f = (FrameHistory) fragment1.getFragment();
+		FramgmentHistory f = (FramgmentHistory) fragment1.getFragment();
 		f.notifyAdapter();
 	}
 
@@ -89,7 +101,7 @@ public class MainActivity extends BaseActivity implements IManageTagListtener,IA
 	 */
 	private void showCreateType() {
 		LogUtil.v("step--FrameDialogAddTag  ");
-		FrameDialogAddTag fragment2 = new FrameDialogAddTag();
+		DialogFragmentAddTag fragment2 = new DialogFragmentAddTag();
 		fragment2.show(getSupportFragmentManager(), "");
 	}
 	/**
@@ -97,7 +109,7 @@ public class MainActivity extends BaseActivity implements IManageTagListtener,IA
 	 */
 	private void showWriteType() {
 
-		FrameDialogWriteTag fragment2 = new FrameDialogWriteTag();
+		DialogFragmentWriteTag fragment2 = new DialogFragmentWriteTag();
 		fragment2.show(getSupportFragmentManager(), "");
 	}
 
@@ -121,7 +133,7 @@ public class MainActivity extends BaseActivity implements IManageTagListtener,IA
 		public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
 			switch (item.getItemId()) {
 			case 0:
-				FrameHistory f = (FrameHistory) fragment1.getFragment();
+				FramgmentHistory f = (FramgmentHistory) fragment1.getFragment();
 				f.deleteTag();
 				amode.finish();
 				break;

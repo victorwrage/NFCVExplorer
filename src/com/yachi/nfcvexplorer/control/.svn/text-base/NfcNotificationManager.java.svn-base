@@ -11,7 +11,15 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 
-
+/**
+ * @firm 长沙江泓信息技术有限公司
+ * 
+ * @author xiaoyl
+ * @date 2013-07-29
+ * 
+ * @file 顶部通知管理
+ * 
+ */
 public class NfcNotificationManager {
 	/**
 	 * 自身的实例

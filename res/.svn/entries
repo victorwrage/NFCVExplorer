@@ -25,6 +25,39 @@ svn:special svn:externals svn:needs-lock
 
 
 299d23ca-5c1f-094e-8f35-abcf76e5704a
+
+
+
+
+
+
+
+
+()
+
+anim
+dir
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deleted
 
 drawable
 dir
@@ -46,8 +79,15 @@ dir
 
 menu
 dir
+
+
+
+delete
 
 values
+dir
+
+values-ja
 dir
 
 values-sw600dp
@@ -60,6 +100,9 @@ values-v11
 dir
 
 values-v14
+dir
+
+values-zh
 dir
 
 xml

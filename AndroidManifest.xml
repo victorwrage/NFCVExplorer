@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.yachi.nfcvexplorer"
-    android:versionCode="1"
+    android:versionCode="2"
     android:versionName="1.01" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="10"
         android:targetSdkVersion="15" />
 
     <uses-feature
@@ -28,6 +28,8 @@
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
     <application
         android:name="com.yachi.nfcvexplorer.NFCApplication"
@@ -40,7 +42,7 @@
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@style/Sherlock.__Theme.Light" >
+            android:theme="@style/Theme.BaseSherlock" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -51,16 +53,15 @@
             android:name="com.yachi.nfcvexplorer.gui.BaseActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@style/Sherlock.__Theme.Light" >
+            android:theme="@style/Theme.BaseSherlock" >
         </activity>
         <activity
             android:name="com.yachi.nfcvexplorer.receive.ActionReceiver"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:theme="@style/BG_Transparent " >
-              <intent-filter>
-                 <action android:name="android.intent.action.VIEW" />
-                 
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
         <activity
@@ -129,68 +130,89 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.FrameActionManager"
+            android:name="com.yachi.nfcvexplorer.gui.ActivityActionManager"
+            android:theme="@style/Theme.BaseSherlock"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.FrameSwitchManager"
+            android:name="com.yachi.nfcvexplorer.gui.ActivitySwitchManager"
+            android:theme="@style/Theme.BaseSherlock"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.FrameTagSave"
+            android:name="com.yachi.nfcvexplorer.gui.ActivityTagSave"
+            android:theme="@style/Theme.BaseSherlock"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.FrameSetting"
+            android:name="com.yachi.nfcvexplorer.gui.ActivitySetting"
+            android:theme="@style/Theme.BaseSherlock"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.FrameSwitchSave"
+            android:name="com.yachi.nfcvexplorer.gui.ActivitySwitchSave"
+            android:theme="@style/Theme.BaseSherlock"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.FrameHelper"
+            android:name="com.yachi.nfcvexplorer.gui.ActivityAbout"
+            android:theme="@style/Theme.BaseSherlock"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.WriteTagActivity"
+            android:name="com.yachi.nfcvexplorer.gui.ActivityWriteTag"
+            android:theme="@style/Theme.BaseSherlock"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.frame.ActivityWebsiteTag"
+            android:name="com.yachi.nfcvexplorer.gui.ActivityWebsiteTag"
+            android:theme="@style/Theme.BaseSherlock"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.frame.ActivityContactTag"
+            android:name="com.yachi.nfcvexplorer.gui.ActivityContactTag"
+            android:theme="@style/Theme.BaseSherlock"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.frame.ActivityDailTag"
+            android:name="com.yachi.nfcvexplorer.gui.ActivityDailTag"
+            android:theme="@style/Theme.BaseSherlock"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.frame.ActivityTextTag"
+            android:name="com.yachi.nfcvexplorer.gui.ActivityTextTag"
+            android:theme="@style/Theme.BaseSherlock"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.frame.ActivityEmailTag"
+            android:name="com.yachi.nfcvexplorer.gui.ActivityEmailTag"
+            android:theme="@style/Theme.BaseSherlock"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
-
+         <activity android:name="com.umeng.fb.ConversationActivity"
+             android:theme="@style/Theme.BaseSherlock"/>
+         <activity android:name="com.umeng.fb.ContactActivity"/>
+         <activity android:name="com.victor.utils.activitys.WebViewActivity"
+             android:theme="@style/Theme.BaseSherlock"/>
+        
         <provider
             android:name=".dao.TagDataProvider"
             android:authorities="com.yachi.nfcvexplorer.dao.TagDataProvider"
             android:exported="false" />
-        
-        <receiver android:name="com.yachi.nfcvexplorer.receive.LockScreenReceive" >
-            <meta-data
-                android:name="android.app.device_admin"
-                android:resource="@xml/my_admin" />
 
-            <intent-filter>
-                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
-            </intent-filter>
-        </receiver>
+        <service
+            android:name="com.umeng.common.net.DownloadingService"
+            android:exported="true"
+            android:process=":DownloadingService" >
+        </service>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5206023456240b33f1048d4a" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="00000000" />
     </application>
 
 </manifest>

@@ -1,3 +1,4 @@
+
 package com.yachi.nfcvexplorer.gui.adapter;
 
 import com.yachi.nfcvexplorer.R;
@@ -8,15 +9,16 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.CompoundButton;
-import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.CheckBox;
 import android.widget.RelativeLayout;
-import android.widget.Switch;
 import android.widget.TextView;
-/**
- * TAG的事件适配器
- * @author xiaoyl
- * @date 2013-07-15
+
+/** 
+ * @ClassName:	ActionAdapter 
+ * @Description:TODO(TAG的事件适配器) 
+ * @author:	xiaoyl
+ * @date:	2013-8-9 下午6:30:30 
+ *  
  */
 public class ActionAdapter extends BaseAdapter  {
 	private Context context;
@@ -70,7 +72,7 @@ public class ActionAdapter extends BaseAdapter  {
 		View view = View.inflate(context,R.layout.action_item_lay, null);
 		holder.action_detail = (TextView) view
 				.findViewById(R.id.action_detail_tv);
-		holder.action_enable = (Switch) view
+		holder.action_enable = (CheckBox) view
 				.findViewById(R.id.action_switch);
 		holder.action_detail.setText(item.getDetail());
 		holder.action_enable.setChecked(item.getAction_enable());
@@ -79,11 +81,13 @@ public class ActionAdapter extends BaseAdapter  {
 		return view;
 	}
 	
+	
+	
 	private static class ViewHolder {
 		/** ACTION 描述 */
 		TextView action_detail;
 		/** ACTION 是否可用 */
-        Switch action_enable;
+        CheckBox action_enable;
 	}
 
 }

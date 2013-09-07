@@ -28,10 +28,12 @@ import android.view.View;
 import android.view.View.OnClickListener;
 
 /**
- * 事物执行管理类
+ * @firm 长沙江泓信息技术有限公司
  * 
  * @author xiaoyl
  * @date 2013-07-13
+ * 
+ * @file 事物执行管理类
  * 
  */
 public class ActionManager {

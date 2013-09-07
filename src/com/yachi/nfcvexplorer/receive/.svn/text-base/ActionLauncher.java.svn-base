@@ -7,7 +7,7 @@ import com.yachi.nfcvexplorer.bean.TagItem;
 import com.yachi.nfcvexplorer.control.ActionManager;
 import com.yachi.nfcvexplorer.dao.TagsDbHelper;
 
-import com.yachi.nfcvexplorer.nfc.M1Card;
+import com.yachi.nfcvexplorer.mifare.M1Card;
 import com.yachi.nfcvexplorer.utils.Constants;
 import com.yachi.nfcvexplorer.utils.LogUtil;
 import com.yachi.nfcvexplorer.utils.NFCUtils;
@@ -19,10 +19,13 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 
-/**
- * 事件提示界面
- * @author xiaoyl
- * @date 2013-07-23
+
+/** 
+ * @ClassName:	ActionLauncher 
+ * @Description:TODO(事件提示界面) 
+ * @author:	xiaoyl
+ * @date:	2013-8-9 下午6:50:52 
+ *  
  */
 public class ActionLauncher extends Activity {
 	private ActionManager actionManager;

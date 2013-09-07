@@ -25,17 +25,516 @@ svn:special svn:externals svn:needs-lock
 
 
 299d23ca-5c1f-094e-8f35-abcf76e5704a
+
+
+
+
+
+
+
+
+()
+
+ActivityAbout.java
+file
+2883
+
+
+
+2013-08-12T03:27:32.757000Z
+3328ec7c44520126f5ab019730e926ce
+2013-08-12T03:24:45.000000Z
+2883
+longge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1997
+
+ActivityActionManager.java
+file
+2883
+
+
+
+2013-08-12T03:27:32.715000Z
+ca17ba1964bf9c1f183d9a91c30116e8
+2013-08-12T03:24:45.000000Z
+2883
+longge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6983
+
+ActivityContactTag.java
+file
+2883
+
+
+
+2013-08-12T03:27:32.372000Z
+b85652662ea807253ee599de2adf56a6
+2013-08-12T03:24:45.000000Z
+2883
+longge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+543
+
+ActivityDailTag.java
+file
+2883
+
+
+
+2013-08-12T03:27:32.357000Z
+69356b8997eba3193fcfcac2970b765b
+2013-08-12T03:24:45.000000Z
+2883
+longge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+533
+
+ActivityEmailTag.java
+file
+2883
+
+
+
+2013-08-12T03:27:32.350000Z
+b02af4e374fd86a810514357b54cbde0
+2013-08-12T03:24:45.000000Z
+2883
+longge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+529
+
+ActivityFeedBack.java
+file
+2916
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deleted
+
+ActivityHelper.java
+file
+2883
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deleted
+
+ActivitySetting.java
+file
+2916
+
+
+
+2013-08-14T01:46:44.436000Z
+4b5ff5a65a26b945a93da68740a92fda
+2013-08-20T08:44:31.125000Z
+2916
+longge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2051
+
+ActivitySwitchManager.java
+file
+2916
+
+
+
+2013-08-14T01:45:51.677000Z
+d0c2a4a4b177020a3a75cad3d75f0c94
+2013-08-20T08:44:31.125000Z
+2916
+longge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3300
+
+ActivitySwitchSave.java
+file
+2883
+
+
+
+2013-08-12T03:27:32.722000Z
+318392bb631c83b8c76e0159055a9cd3
+2013-08-12T03:24:45.000000Z
+2883
+longge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7485
+
+ActivityTagSave.java
+file
+2916
+
+
+
+2013-08-14T01:45:18.812000Z
+00e6f6b1cb58f195c052280339f2653e
+2013-08-20T08:44:31.125000Z
+2916
+longge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6085
+
+ActivityTextTag.java
+file
+2874
+
+
+
+2013-08-12T03:27:32.689000Z
+9dd6c8b98c00b93bb8e59da2f0e3fe6f
+2013-08-09T09:54:24.515625Z
+2874
+longge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+464
+
+ActivityWebsiteTag.java
+file
+2874
+
+
+
+2013-08-12T03:27:32.340000Z
+749291d0ae8936c7b78b97f46862b73d
+2013-08-09T09:54:24.515625Z
+2874
+longge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+472
+
+ActivityWriteFragment.java
+file
+2874
+
+
+
+2013-08-12T03:27:32.730000Z
+5d5e0b1b44f8a58e1628bf0125cb360c
+2013-08-09T09:54:24.515625Z
+2874
+longge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1862
+
+ActivityWriteTag.java
+file
+2883
+
+
+
+2013-08-12T03:27:32.364000Z
+2b4fc9c6be823f1fa58eed48df7eb8c3
+2013-08-12T03:24:45.000000Z
+2883
+longge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4993
 
 BaseActivity.java
 file
-2797
+2916
 
 
 
-2013-08-07T06:13:34.213000Z
-82205249e7f90d299577d44b6840e4a9
-2013-08-07T06:15:31.906250Z
-2797
+2013-08-14T01:42:01.542000Z
+5d306220a03aec16f52f5ce6061587bc
+2013-08-20T08:44:31.125000Z
+2916
 longge
 
 
@@ -58,19 +557,11 @@ longge
 
 
 
-4069
+4566
 
 FrameActionManager.java
 file
-2797
-
-
-
-2013-08-07T06:13:34.182000Z
-3d7a140975badb5b26dff66122cc1467
-2013-08-07T06:15:31.906250Z
-2797
-longge
+2874
 
 
 
@@ -90,21 +581,11 @@ longge
 
 
 
-
-
-6763
+deleted
 
 FrameDialogAddTag.java
 file
-2797
-
-
-
-2013-08-07T06:13:34.166000Z
-750c0ece6d260c74f603419af4bf541c
-2013-08-07T06:15:31.906250Z
-2797
-longge
+2874
 
 
 
@@ -124,21 +605,11 @@ longge
 
 
 
-
-
-3811
+deleted
 
 FrameDialogEditAction.java
 file
-2797
-
-
-
-2013-08-07T06:13:34.135000Z
-512872650facd921611ebb6fab392e44
-2013-08-07T06:15:31.906250Z
-2797
-longge
+2874
 
 
 
@@ -158,21 +629,11 @@ longge
 
 
 
-
-
-15753
+deleted
 
 FrameDialogSelectAction.java
 file
-2797
-
-
-
-2013-08-07T06:13:34.120000Z
-f1a0f7ee007e0376897884bdf6a0dcf0
-2013-08-07T06:15:31.906250Z
-2797
-longge
+2874
 
 
 
@@ -192,21 +653,11 @@ longge
 
 
 
-
-
-4606
+deleted
 
 FrameDialogSelectTag.java
 file
-2797
-
-
-
-2013-08-07T06:13:34.088000Z
-22f9da0866ebc99d213c86e28540551b
-2013-08-07T06:15:31.906250Z
-2797
-longge
+2874
 
 
 
@@ -226,21 +677,11 @@ longge
 
 
 
-
-
-2490
+deleted
 
 FrameDialogWriteTag.java
 file
-2797
-
-
-
-2013-08-07T06:13:34.073000Z
-c046cb0abcca8447c0be754296f4dfc8
-2013-08-07T06:15:31.906250Z
-2797
-longge
+2874
 
 
 
@@ -260,21 +701,11 @@ longge
 
 
 
-
-
-3044
+deleted
 
 FrameHelper.java
 file
-2797
-
-
-
-2013-08-07T06:13:34.042000Z
-6df6f576d1c40fbdacbee5a87c59e796
-2013-08-07T06:15:31.906250Z
-2797
-longge
+2874
 
 
 
@@ -294,21 +725,11 @@ longge
 
 
 
-
-
-1973
+deleted
 
 FrameMain.java
 file
-
-
-
-
-2013-08-07T06:11:42.854000Z
-8d6d3c69d8bc397013367cac856b4e07
-2013-07-24T03:42:41.937500Z
-2519
-longge
+2874
 
 
 
@@ -328,21 +749,11 @@ longge
 
 
 
-
-
-1911
+deleted
 
 FrameSetting.java
 file
-2797
-
-
-
-2013-08-07T06:13:33.979000Z
-d2e8dffd5f61a36d363f2a3d6367c41c
-2013-08-07T06:15:31.906250Z
-2797
-longge
+2874
 
 
 
@@ -362,21 +773,11 @@ longge
 
 
 
-
-
-2122
+deleted
 
 FrameSwitchManager.java
 file
-2797
-
-
-
-2013-08-07T06:13:33.964000Z
-8ee2e4d4048e66c3ae06103afa0afda6
-2013-08-07T06:15:31.906250Z
-2797
-longge
+2874
 
 
 
@@ -396,21 +797,11 @@ longge
 
 
 
-
-
-3596
+deleted
 
 FrameSwitchSave.java
 file
-2797
-
-
-
-2013-08-07T06:13:33.932000Z
-8b7227d251f10b1da9c83862616673ef
-2013-08-07T06:15:31.906250Z
-2797
-longge
+2874
 
 
 
@@ -430,21 +821,11 @@ longge
 
 
 
-
-
-7411
+deleted
 
 FrameTagSave.java
 file
-2797
-
-
-
-2013-08-07T06:13:33.917000Z
-0514e11724b0603d6011bd7a4b7414aa
-2013-08-07T06:15:31.906250Z
-2797
-longge
+2874
 
 
 
@@ -464,21 +845,11 @@ longge
 
 
 
-
-
-6570
+deleted
 
 WriteFragmentActivity.java
 file
-2797
-
-
-
-2013-08-07T06:13:33.886000Z
-f1683c8c9d41de77ca279163048fd4d8
-2013-08-07T06:15:31.906250Z
-2797
-longge
+2874
 
 
 
@@ -498,21 +869,11 @@ longge
 
 
 
-
-
-1466
+deleted
 
 WriteTagActivity.java
 file
-2797
-
-
-
-2013-08-07T06:13:33.870000Z
-d73a75a8cfd5eff3ce7a501d25439bda
-2013-08-07T06:15:31.906250Z
-2797
-longge
+2874
 
 
 
@@ -532,13 +893,35 @@ longge
 
 
 
-
-
-4843
+deleted
 
 adapter
 dir
 
 frame
+dir
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deleted
+
+framgment
 dir
 

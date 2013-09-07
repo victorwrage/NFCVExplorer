@@ -31,7 +31,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dip"
-        android:background="@drawable/nor_button_bg"
+        android:background="@drawable/list_button_bg_drawable"
         android:clickable="true"
         android:orientation="horizontal"
         android:padding="12.0dip" >
@@ -61,7 +61,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dip"
-        android:background="@drawable/nor_button_bg"
+        android:background="@drawable/list_button_bg_drawable"
         android:clickable="true"
         android:orientation="horizontal"
         android:padding="12.0dip" >

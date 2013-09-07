@@ -25,7 +25,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dip"
-                android:background="@drawable/nor_button_bg"
+                android:background="@drawable/coners__round_bg"
                 android:orientation="vertical" >
 
                 <LinearLayout
@@ -38,7 +38,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/nor_button_bg"
+                       android:background="@drawable/list_button_top_left_bg_color"
                         android:clickable="true"
                         android:orientation="horizontal"
                         android:padding="12.0dip" >
@@ -82,7 +82,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/nor_button_bg"
+                        android:background="@drawable/list_button_top_right_bg_color"
                         android:clickable="true"
                         android:orientation="horizontal"
                         android:padding="12.0dip" >
@@ -132,7 +132,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/nor_button_bg"
+                        android:background="@drawable/list_button_bottom_left_bg_color"
                         android:clickable="true"
                         android:orientation="horizontal"
                         android:padding="12.0dip" >
@@ -176,7 +176,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/nor_button_bg"
+                        android:background="@drawable/list_button_bottom_right_bg_color"
                         android:clickable="true"
                         android:orientation="horizontal"
                         android:padding="12.0dip" >
@@ -235,6 +235,7 @@
                 <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/coners__round_bg"
                     android:orientation="horizontal" >
 
                     <LinearLayout
@@ -242,7 +243,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/nor_button_bg"
+                        android:background="@drawable/list_button_left_bg_color"
                         android:clickable="true"
                         android:orientation="horizontal"
                         android:padding="12.0dip" >
@@ -287,7 +288,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/nor_button_bg"
+                        android:background="@drawable/list_button_right_bg_color"
                         android:clickable="true"
                         android:orientation="horizontal"
                         android:padding="12.0dip" >
@@ -346,6 +347,7 @@
                 <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/coners__round_bg"
                     android:orientation="horizontal" >
 
                     <LinearLayout
@@ -353,7 +355,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/nor_button_bg"
+                        android:background="@drawable/list_button_left_bg_color"
                         android:clickable="true"
                         android:orientation="horizontal"
                         android:padding="12.0dip" >
@@ -398,8 +400,8 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/nor_button_bg"
                         android:clickable="true"
+                        android:background="@drawable/list_button_right_bg_color"
                         android:orientation="horizontal"
                         android:padding="12.0dip" >
 

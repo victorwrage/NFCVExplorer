@@ -19,6 +19,15 @@ import android.net.wifi.WifiManager;
 
 import android.telephony.SmsManager;
 
+/**
+ * @firm 长沙江泓信息技术有限公司
+ * 
+ * @author xiaoyl
+ * @date 2013-07-20
+ * 
+ * @file 事件功能
+ * 
+ */
 public class ActionExecuteUtils {
 	private Context context;
 	private ActionItem item;

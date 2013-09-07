@@ -9,10 +9,15 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.net.Uri;
+
 /**
- * @data 数据库的Provider类
+ * @firm 长沙江泓信息技术有限公司
+ * 
  * @author xiaoyl
  * @date 2013-07-13
+ * 
+ * @file 数据库的Provider类
+ * 
  */
 public class TagDataProvider extends ContentProvider {
 	/**TAG管理表*/

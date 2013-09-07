@@ -1,28 +1,28 @@
 package com.yachi.nfcvexplorer.control;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 
 import com.yachi.nfcvexplorer.bean.ActionItem;
-import com.yachi.nfcvexplorer.bean.TagItem;
+
 
 /**
- * 事物执行线程的基类
+ * @firm 长沙江泓信息技术有限公司
  * 
  * @author xiaoyl
  * @date 2013-07-19
+ * 
+ * @file 事物执行线程
+ * 
  */
 public  class ActionThread extends Thread {
 	private ActionItem item;
-	private Context context;
 	private Handler handler;
     private ActionExecuteUtils actionUtils;
     /** 执行成功*/
     public static final int ACTION_EXEC_SUCCESS = 1024;
 	public ActionThread(Context context, ActionItem item,Handler handler) {
-		this.context = context;
 		this.item = item;
 		this.handler = handler;
 		actionUtils =new ActionExecuteUtils(context,item);

@@ -12,8 +12,4 @@
 
 # Project target.
 target=android-17
-android.library.reference.3=..\\library_pageIndicator
-android.library.reference.1=..\\library_slidingmenu
-android.library.reference.2=..\\library_actionbarsherlock
-android.library.reference.4=..\\library_notifications4everywhere
-android.library.reference.5=../library_utils
+android.library.reference.1=..\\library_utils

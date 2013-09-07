@@ -23,6 +23,12 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.PopupWindow;
 
+/**
+ * 自定义的Spinner（圆角）
+ * @author xiaoyl
+ * @date 2013-08-08
+ *
+ */
 public class CustomSinnper extends Button {
 
 	protected PopupWindow popup = null;

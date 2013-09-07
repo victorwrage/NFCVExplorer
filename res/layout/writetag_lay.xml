@@ -3,7 +3,8 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:minWidth="300.0dip"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    android:background="@color/white">
 
     <TextView
         style="@android:style/TextAppearance.Large"
@@ -24,7 +25,7 @@
         android:id="@+id/write_website_lay"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/nor_button_bg"
+        android:background="@drawable/list_button_bg_drawable"
         android:clickable="true"
         android:orientation="horizontal"
         android:padding="12.0dip" >
@@ -66,7 +67,7 @@
         android:id="@+id/write_contact_lay"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/nor_button_bg"
+        android:background="@drawable/list_button_bg_drawable"
         android:clickable="true"
         android:orientation="horizontal"
         android:padding="12.0dip" >
@@ -108,7 +109,7 @@
         android:id="@+id/write_dialnumber_lay"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/nor_button_bg"
+        android:background="@drawable/list_button_bg_drawable"
         android:clickable="true"
         android:orientation="horizontal"
         android:padding="12.0dip" >
@@ -150,7 +151,7 @@
         android:id="@+id/write_text_lay"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/nor_button_bg"
+        android:background="@drawable/list_button_bg_drawable"
         android:clickable="true"
         android:orientation="horizontal"
         android:padding="12.0dip" >
@@ -192,7 +193,7 @@
         android:id="@+id/write_email_lay"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/nor_button_bg"
+        android:background="@drawable/list_button_bg_drawable"
         android:clickable="true"
         android:orientation="horizontal"
         android:padding="12.0dip" >
@@ -239,7 +240,7 @@
         android:id="@+id/cancel_write_lay"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/nor_button_bg"
+        android:background="@drawable/custom_button_bg"
         android:clickable="true"
         android:orientation="horizontal"
         android:minHeight="48dip"

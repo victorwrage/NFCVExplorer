@@ -28,6 +28,8 @@
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
     <application
         android:name="com.yachi.nfcvexplorer.NFCApplication"
@@ -58,9 +60,8 @@
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:theme="@style/BG_Transparent " >
-              <intent-filter>
-                 <action android:name="android.intent.action.VIEW" />
-                 
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
         <activity
@@ -129,59 +130,71 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.FrameActionManager"
+            android:name="com.yachi.nfcvexplorer.gui.ActivityActionManager"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.FrameSwitchManager"
+            android:name="com.yachi.nfcvexplorer.gui.ActivitySwitchManager"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.FrameTagSave"
+            android:name="com.yachi.nfcvexplorer.gui.ActivityTagSave"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.FrameSetting"
+            android:name="com.yachi.nfcvexplorer.gui.ActivitySetting"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.FrameSwitchSave"
+            android:name="com.yachi.nfcvexplorer.gui.ActivitySwitchSave"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.FrameHelper"
+            android:name="com.yachi.nfcvexplorer.gui.ActivityAbout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.yachi.nfcvexplorer.gui.ActivityFeedBack"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.WriteTagActivity"
+            android:name="com.yachi.nfcvexplorer.gui.ActivityWriteTag"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.frame.ActivityWebsiteTag"
+            android:name="com.yachi.nfcvexplorer.gui.ActivityWebsiteTag"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.frame.ActivityContactTag"
+            android:name="com.yachi.nfcvexplorer.gui.ActivityContactTag"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.frame.ActivityDailTag"
+            android:name="com.yachi.nfcvexplorer.gui.ActivityDailTag"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.frame.ActivityTextTag"
+            android:name="com.yachi.nfcvexplorer.gui.ActivityTextTag"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.yachi.nfcvexplorer.gui.frame.ActivityEmailTag"
+            android:name="com.yachi.nfcvexplorer.gui.ActivityEmailTag"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
-
+         <activity android:name="com.umeng.fb.ConversationActivity"/>
+         <activity android:name="com.umeng.fb.ContactActivity"/>
+        
         <provider
             android:name=".dao.TagDataProvider"
             android:authorities="com.yachi.nfcvexplorer.dao.TagDataProvider"
             android:exported="false" />
-        
+
+        <service
+            android:name="com.umeng.common.net.DownloadingService"
+            android:exported="true"
+            android:process=":DownloadingService" >
+        </service>
+
         <receiver android:name="com.yachi.nfcvexplorer.receive.LockScreenReceive" >
             <meta-data
                 android:name="android.app.device_admin"
@@ -191,6 +204,14 @@
                 <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
             </intent-filter>
         </receiver>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5206023456240b33f1048d4a" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="00000000" />
     </application>
 
 </manifest>

@@ -5,15 +5,13 @@
     android:minHeight="45dip">
 
 
-    <Switch
+    <CheckBox
         android:id="@+id/action_switch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:focusable="false"
         android:focusableInTouchMode="false"
-        android:textOn="已启用"
-        android:textOff="已禁用"
         android:layout_marginRight="5dip"
         android:layout_alignParentRight="true"
         android:visibility="gone"/>

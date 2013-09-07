@@ -70,7 +70,7 @@
         android:id="@+id/contact_write_lay"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/write_tag_button_bg"
+        android:background="@drawable/custom_button_bg"
         android:layout_marginLeft="10dip"
         android:layout_marginRight="10dip"
         android:clickable="true"

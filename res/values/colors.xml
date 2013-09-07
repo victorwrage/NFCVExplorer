@@ -4,7 +4,10 @@
 	<color name="white">#FFFFFF</color>
 	<color name="black">#000000</color>
 	<color name="gray">#666666</color>
+	<color name="light_gray">#999999</color>
 	<color name="green">#99cc00</color>
 	<color name="transparent">#00000000</color>
 	<color name="transparent_background">#50000000</color>
+	<color name="corners_button_bg_1">#00000000</color>
+	<color name="corners_button_bg_2">#33B5E5</color>
 </resources>

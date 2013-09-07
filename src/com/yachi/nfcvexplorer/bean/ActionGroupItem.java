@@ -2,6 +2,15 @@ package com.yachi.nfcvexplorer.bean;
 
 import com.yachi.nfcvexplorer.R;
 
+/**
+ * @firm 长沙江泓信息技术有限公司
+ * 
+ * @author xiaoyl
+ * @date 2013-07-25
+ * 
+ * @file 列表中的事件Bean（GROUP）
+ * 
+ */
 public class ActionGroupItem {
    public static final String group_titles[]= {"无线和网络","声音及音量","操作任务","电话","应用程序"}; 
    public static final int group_icons[]= {R.drawable.ic_category_networks,

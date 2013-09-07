@@ -24,7 +24,7 @@
         android:id="@+id/add_tag_lay"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/nor_button_bg"
+        android:background="@drawable/list_button_bg_drawable"
         android:clickable="true"
         android:orientation="horizontal"
         android:padding="12.0dip" >
@@ -65,7 +65,7 @@
         android:id="@+id/add_switch_lay"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/nor_button_bg"
+        android:background="@drawable/list_button_bg_drawable"
         android:clickable="true"
         android:orientation="horizontal"
         android:padding="12.0dip" >
@@ -107,7 +107,7 @@
         android:id="@+id/add_write_lay"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/nor_button_bg"
+        android:background="@drawable/list_button_bg_drawable"
         android:clickable="true"
         android:orientation="horizontal"
         android:padding="12.0dip" >
@@ -154,7 +154,7 @@
         android:id="@+id/cancel_tag_lay"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/nor_button_bg"
+        android:background="@drawable/custom_button_bg"
         android:clickable="true"
         android:orientation="horizontal"
         android:minHeight="48dip"

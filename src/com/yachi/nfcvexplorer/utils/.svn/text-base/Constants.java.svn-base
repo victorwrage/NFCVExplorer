@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 import com.yachi.nfcvexplorer.bean.ActionItem;
 import com.yachi.nfcvexplorer.bean.TagItem;
-import com.yachi.nfcvexplorer.control.ACTION_TYPE;
-import com.yachi.nfcvexplorer.control.WRITE_TYPE;
-import com.yachi.nfcvexplorer.nfc.M1Card;
+import com.yachi.nfcvexplorer.control.ENUM_ACTION_TYPE;
+import com.yachi.nfcvexplorer.control.ENUM_WRITE_TYPE;
+import com.yachi.nfcvexplorer.mifare.M1Card;
 /**
  * 全局变量控制类
  * @author xiaoyl
@@ -37,11 +37,11 @@ public class Constants
   /**
    * 已选中事件集合
    */
-  public static ArrayList<ACTION_TYPE> actionList;
+  public static ArrayList<ENUM_ACTION_TYPE> actionList;
   /**
    * 写入标签类型
    */
-  public static WRITE_TYPE write_type;
+  public static ENUM_WRITE_TYPE write_type;
   /**
    * 写入标签文本数组
    */

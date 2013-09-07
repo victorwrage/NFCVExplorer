@@ -14,6 +14,15 @@ import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 
+/**
+ * @firm 长沙江泓信息技术有限公司
+ * 
+ * @author xiaoyl
+ * @date 2013-07-13
+ * 
+ * @file DBhelper
+ * 
+ */
 public class TagsDbHelper {
 	private Context context;
 	private ContentResolver contentResolver;

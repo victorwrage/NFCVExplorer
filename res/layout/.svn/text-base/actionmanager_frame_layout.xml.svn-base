@@ -43,7 +43,7 @@
         android:id="@+id/add_action_lay"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/nor_button_bg"
+        android:background="@drawable/list_button_bg_drawable"
         android:layout_marginTop="5dip"
         android:clickable="true"
         android:orientation="horizontal"

@@ -1,8 +1,13 @@
 package com.yachi.nfcvexplorer.control;
+
 /**
- * @date 2013-07-11
+ * @firm 长沙江泓信息技术有限公司
+ * 
  * @author xiaoyl
- * 所有fragment的类型
+ * @date 2013-07-11
+ * 
+ * @file 主界面视图的接口
+ * 
  */
 public interface IFragment {
 	/**获取标题*/

@@ -6,9 +6,13 @@ import android.content.SharedPreferences.Editor;
 import android.preference.PreferenceManager;
 
 /**
- * 小数据存读Preference操作类
+ * @firm 长沙江泓信息技术有限公司
+ * 
  * @author xiaoyl
  * @date 2013-07-20
+ * 
+ * @file 小数据存读Preference操作类
+ * 
  */
 public class NfcVSharedPreference {
 	/** 小数据配置存储类*/

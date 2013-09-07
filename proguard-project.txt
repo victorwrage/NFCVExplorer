@@ -18,3 +18,50 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+
+-dontskipnonpubliclibraryclassmembers
+
+-libraryjars /libs/umeng_sdk.jar
+
+-keep public class com.umeng.fb.ui.ThreadView {
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keepclassmembers class * {
+   public <init>(org.json.JSONObject);
+}
+
+-keep public class com.umeng.fb.ui.ThreadView {
+}
+
+-keep class com.umeng.update.** { *;}
+-dontwarn com.umeng.update.**
+-keep class com.actionbarsherlock.** { *;}
+-keep class com.jeremyfeinstein.slidingmenu.lib.** { *;}
+-keep class com.viewpagerindicator.** { *;}
+-keep class com.youxiachai.notifybar.** { *;}
+
+-keepclassmembers class * {
+   public <init>(org.json.JSONObject);
+}
+
+-keep public class com.yachi.nfcvexplorer.R$*{
+    public static final int *;
+}
+-keep public class com.actionbarsherlock.R$*{
+    public static final int *;
+}
+-keep public class com.jeremyfeinstein.slidingmenu.lib.R$*{
+    public static final int *;
+}
+-keep public class com.viewpagerindicator.R$*{
+    public static final int *;
+}
+-keep public class com.youxiachai.notifybar.R$*{
+    public static final int *;
+}
+
+

@@ -6,12 +6,12 @@ import android.view.KeyEvent;
 import android.widget.Toast;
 
 /**
- * 
- * @file DoubleConfirm.java 摘要:二次返回按键确认
+ * @firm 长沙江泓信息技术有限公司
  * 
  * @author xiaoyl
- * @data 2013-6-16
- * @version
+ * @date 2013-07-19
+ * 
+ * @file 二次返回按键确认
  * 
  */
 public class DoubleConfirm {

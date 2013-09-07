@@ -8,13 +8,17 @@ package com.victor.library_utils;
 
 public final class R {
 	public static final class drawable {
-		public static final int ic_launcher = 0x7f020096;
+		public static final int ic_launcher = 0x7f0200a5;
+		public static final int mm_listitem_normal = 0x7f0200bc;
+		public static final int mm_listitem_pressed = 0x7f0200bd;
+		public static final int voice_rcd_btn_nor = 0x7f02015c;
+		public static final int voice_rcd_btn_pressed = 0x7f02015d;
 	}
 	public static final class string {
-		public static final int app_name = 0x7f050000;
+		public static final int app_name = 0x7f0b000d;
 	}
 	public static final class style {
-		public static final int AppBaseTheme = 0x7f060000;
-		public static final int AppTheme = 0x7f060001;
+		public static final int AppBaseTheme = 0x7f0c005d;
+		public static final int AppTheme = 0x7f0c005e;
 	}
 }

@@ -25,17 +25,26 @@ svn:special svn:externals svn:needs-lock
 
 
 299d23ca-5c1f-094e-8f35-abcf76e5704a
+
+
+
+
+
+
+
+
+()
 
 MainActivity.java
 file
-2803
+2883
 
 
 
-2013-08-07T06:36:05.240000Z
-30ee2f746b99663cbe2155e50158f390
-2013-08-07T06:36:56.565498Z
-2803
+2013-08-12T03:27:32.264000Z
+672f673aeab85e6b56c1f4435d0d840e
+2013-08-12T03:24:45.000000Z
+2883
 longge
 
 
@@ -58,18 +67,18 @@ longge
 
 
 
-4084
+4437
 
 NFCApplication.java
 file
-2810
+2916
 
 
 
-2013-08-07T06:49:45.630000Z
-10e9361943dfad49e139d2ad97485fce
-2013-08-07T06:50:30.049873Z
-2810
+2013-08-14T01:36:49.043000Z
+6cc2488ef65bf57645cb1cf120c7e4c4
+2013-08-20T08:44:31.125000Z
+2916
 longge
 
 
@@ -92,7 +101,7 @@ longge
 
 
 
-1543
+543
 
 bean
 dir
@@ -106,8 +115,32 @@ dir
 gui
 dir
 
+mifare
+dir
+
 nfc
 dir
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deleted
 
 receive
 dir

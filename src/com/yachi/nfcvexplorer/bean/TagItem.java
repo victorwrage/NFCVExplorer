@@ -3,10 +3,13 @@ package com.yachi.nfcvexplorer.bean;
 import java.util.Vector;
 
 /**
- * 描述标签
+ * @firm 长沙江泓信息技术有限公司
  * 
  * @author xiaoyl
- * @2013-07-13
+ * @date 2013-07-13
+ * 
+ * @file 标签数据Bean
+ * 
  */
 public class TagItem {
 	private long id = 00000;
